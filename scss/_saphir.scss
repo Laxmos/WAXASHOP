@@ -1,0 +1,106 @@
+.saphir {
+    background: #fff;
+    padding: 0 25px;
+
+    &__body {
+        background: url(../img/saphir/background.jpg) no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Gotham_Pro";
+        text-align: center;
+    }
+
+    &__logo {
+        padding-top: 100px;
+    }
+
+    &__title {
+        padding-top: 16px;
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 48px;
+        letter-spacing: 0.03em;
+        color: #262626;
+    }
+
+    &__text {
+        padding-top: 63px;
+        width: 100%;
+        max-width: 676px;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+        color: #262626;
+        font-family: "PT_Sans";
+        transition: all 0.8s linear 0s;
+        overflow: hidden;
+    }
+
+    &__shadow {
+        //display: none;
+    }
+
+    &__continuation{
+        display: none;
+        text-align: center;
+    }
+
+    &__further {
+        padding: 15px 0 99px 0;
+        font-weight: 900;
+        font-size: 7px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: #A86D06;
+    }
+}
+@media (max-width: 600px){
+    .saphir {
+
+		&__body {
+            width: 100%;
+            max-width: 1450px;
+		}
+        &__logo{
+            padding-top: 58px;
+        }
+		&__logo img {
+            width: 113px;
+            height: 81px;
+		}
+
+		&__title {
+            font-size: 28px;
+            line-height: 34px;
+            padding: 25px 26px 0 26px;
+		}
+
+		&__text {
+            //display: none;
+            width: auto;
+            padding: 10px 25px 0 25px;
+            font-size: 14px;
+            line-height: 22px;
+		}
+
+		&__shadow {
+            display: none;
+            //width: auto;
+           //padding: 10px 25px 0 25px;
+            //font-size: 14px;
+            //line-height: 22px;
+		}
+
+        &__continuation{
+            display: block;
+            padding-top: 24px;
+        }
+
+		&__further {
+            padding-bottom: 47px;
+		}
+    }
+}

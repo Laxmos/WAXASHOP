@@ -1,0 +1,379 @@
+.footer {
+
+    &__body {
+        width: auto;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 34px 0;
+    }
+
+    &__icon {
+        color: #7A7A7A;
+        margin: 0 7.5px;
+        cursor: pointer;
+    }
+
+    &__icon .instagram{
+        font-size: 31px;
+    }
+
+    &__icon .instagram:hover{
+        color: transparent;    
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(-315deg, #d1d408, #b702ff);
+        transition: all 0.5s linear 0s;
+    }
+
+    &__icon .vk{
+        font-size: 35px;
+    }
+    &__icon .vk:hover{
+        color: #597da3;
+        transition: all 0.5s linear 0s;
+    }
+
+    &__icon .facebook{
+        font-size: 25px;
+    }
+    &__icon .facebook:hover{
+        color:#3b5998;
+        transition: all 0.5s linear 0s;
+    }
+
+    &__line{
+        width: 100%;
+        height: 2px;
+        background: #E9E9E9;
+    }
+
+    &__center {
+        font-family: "Gotham_Pro";
+        padding-left: 55px;
+    }
+
+    &__bottom {
+        padding-left: 55px;
+    }
+}
+
+.f-center {
+
+    &__body {
+        max-width: 1048px;
+        margin: 0 auto;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    &__column {
+        display: flex;
+    }
+
+    &__company {
+    }
+
+    &__title {
+        cursor: default;
+        font-family: "Gotham_Pro";
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+        color: #262626;
+        margin-bottom: 30px;
+    }
+
+    &__lists {
+        display: flex;
+    }
+
+    &__list {
+        width: 262px;
+    }
+
+    &__item {
+        font-family: "PT_Sans";
+        font-size: 13px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+        color: #262626;
+        margin-bottom: 15px;
+        transition: color 0.2s linear 0s;
+    }
+    &__item:hover{
+        cursor: pointer;
+        color: #a1a1a1;
+        transition: all 0.2s linear 0s;
+    }
+
+    &__shoe-care {
+    }
+
+    &__contacts {
+    }
+
+    &__phone{
+        transition: all 0.2s linear 0s;
+    }
+    &__phone:hover{
+        color: rgb(73, 98, 167);
+        transition: all 0.2s linear 0s;
+    }
+
+    &__text {
+        line-height: 16px;
+        color: #7A7A7A;
+        transition: color 0.2s linear 0s;
+    }
+    &__text:hover{
+        color: #262626;
+        transition: all 0.2s linear 0s;
+    }
+
+	&__row-bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 45px;
+        margin-bottom: 29px;
+	}
+
+	&__bond {
+        display: flex;
+	}
+
+	&__bond &__item {
+        margin-right: 15px;
+        font-size: 13px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+        color: #7A7A7A;
+        margin-bottom: 0;
+        transition: color 0.2s linear 0s;
+	}
+    &__bond &__item:hover{
+        color: #262626;
+        transition: all 0.5s linear 0s;
+    }
+
+	&__requisites {
+        margin-right: 86px;
+        cursor: pointer;
+	}
+
+
+
+}
+
+.f-bottom {
+
+    &__body{
+        width: 1038px;
+        margin: 30px auto 200px auto;
+    }
+
+    &__row{
+        display: flex;
+    }
+
+	&__img {
+        margin-right: 158px;
+        cursor: pointer;
+	}
+
+	&__text {
+        cursor: default;
+        width: 533px;
+        font-size: 13px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: #7A7A7A;
+	}
+
+	&__copyright {
+        cursor: pointer;
+        width: 274px;
+        margin-left: 28px;
+        font-size: 13px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: rgba(122, 122, 122, 0.5);
+        transition: color 0.2s linear 0s;
+    }
+    &__copyright:hover{
+        color: rgb(61, 61, 61);
+        transition: all 0.2s linear 0s;
+    }
+
+}
+
+@media ( max-width: 1100px ){
+    .footer {
+        &__body {
+            background: #fff;
+            padding: 0 25px;
+        }
+
+
+
+        &__line{
+            width: 100%;
+            //margin: 0 25px;
+        }
+        
+        &__center {
+            padding-left: 0;
+        }
+    
+        &__bottom {
+            padding-left: 0;
+        }
+    }
+
+  
+    .f-center {
+
+        &__row {
+            flex-wrap: wrap;//
+            margin-left: 80px;//
+        }
+
+        &__bond {
+            flex-wrap: wrap;//
+        }
+    
+        &__requisites {
+            margin-right: 0;//
+        }
+    
+    }
+        
+
+    .f-bottom {
+
+        &__body{
+            width: 100%;
+            max-width: 1038px;
+            text-align: center;
+        }
+
+        &__row{
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        &__img {
+            margin-right: 0;
+            margin-top: 15px;
+        }
+
+        &__text {
+            width: auto;
+            max-width: 500px;
+            margin-top: 15px;
+        }
+
+        &__copyright {
+            margin: 15px 0 100px 0;
+
+        }
+    }
+
+}
+
+@media ( max-width: 600px ){
+    .footer {
+        &__top {
+            justify-content: start;
+            padding: 45px 0 15px 0 ;
+        }
+
+        &__icon .instagram{
+            font-size: 22px;
+        }
+
+        &__icon .vk{
+            font-size: 25px;
+        }
+
+        &__icon .facebook{
+            font-size: 20px;
+        }
+    }
+    .f-center {
+        &__title {
+            font-size: 14px;
+            line-height: 26px;
+            margin-bottom: 13px;
+        }
+        &__item {
+            font-size: 11px;
+            line-height: 26px;
+        }
+        &__row {
+            margin-left: 0;//
+            margin-top: 0;
+            width: auto;
+            justify-content: start;
+        }
+        &__company {
+            width: 100%;
+        }
+
+        &__column {
+            margin-top: 32px;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        &__lists {
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        &__list {
+            width: 150px;
+
+        }
+
+        &__row-bottom {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        &__bond{
+            max-width: 215px;
+        }
+        &__bond &__item {
+            font-size: 11px;
+            line-height: 22px;
+        }
+
+        &__requisites {
+            width: 87px;
+            height: 13px;
+        }
+
+        &__requisites img{
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+
+    .f-bottom {
+        &__text {
+            max-width: 275px;
+        }
+    }
+}

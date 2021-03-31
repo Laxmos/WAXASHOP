@@ -1,0 +1,203 @@
+.stealth {
+    position: relative;
+}
+.gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    left: 0;
+    top: 0;
+}
+.magazine {
+    background: #fff;
+    padding: 30px 25px 20px 25px;
+    &__body {
+        background: #F9F9F9;
+        text-align: center;
+        font-family: "Gotham_Pro";
+    }
+
+    &__logo {
+        font-size: 48px;
+        line-height: 48px;
+        color: #A86D06;
+        font-family: "Amsterdam_Deco_One";
+        padding-top: 100px;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 44px;
+        color: #262626;
+    }
+
+    &__circle {
+        font-weight: 900;
+        font-size: 7px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: #A86D06;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: center;
+        //justify-content: space-around;
+        flex-wrap: wrap;
+
+    }
+
+    &__column {
+        max-width: 450px;
+        background: #fff;
+        text-align: start;
+        margin: 0 12px;
+        margin-top: 30px;
+        box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.07);
+        transition: box-shadow 0.5s linear 0s;
+        cursor: default;
+    }
+
+    &__column:hover{
+        box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.3);
+        transition: box-shadow 0.5s linear 0s;
+    }
+
+    &__img {
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: #A86D06;
+        padding: 0 40px;
+        padding-top: 27px;
+    }
+
+    &__date {
+        font-size: 13px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: #7A7A7A;
+        padding: 0 40px;
+    }
+
+    &__title-column{
+        width: auto;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+        color: #262626;
+        //padding: 0 40px;
+        //padding-top: 15px;
+        margin: 15px 30px 0 30px;
+        padding: 0 10px;
+        cursor: pointer;
+        transition: all 0.5s linear 0s;
+    }
+
+    &__title-column:hover{
+        box-shadow: 0 5px 8px rgba($color: #000000, $alpha: 0.2);
+        transition: all 0.5s linear 0s;
+    }
+
+    &__text {
+        font-family: "PT_Sans";
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+        color: #262626;
+        padding: 0 40px;
+        padding-top: 25px;
+    }
+
+    &__continuation {
+        margin: 0 40px;
+        margin-top: 15px;
+        margin-bottom: 40px;
+        cursor: pointer;
+    }
+
+    &__continuation:hover{
+        text-decoration: underline;
+    }
+
+    &__button {
+        width: 192px;
+        height: 48px;
+        background: #A86D06;
+        border: 1px solid #A86D06;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        margin: 30px 0 100px 0;
+        cursor: pointer;
+    }
+    &__button:hover{
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 1000px){
+    .magazine {
+        &__shadow{
+            display: none;
+        }
+    }
+}
+@media (max-width: 550px){
+    .magazine {
+        &__body {
+            background: #fff;
+        }
+        &__logo {
+            padding-top: 75px;
+        }
+        &__column{
+            width: 100%;
+            margin: 25px 0 0 0;
+        }
+        &__subtitle {
+            font-size: 11px;
+            padding: 24px 25px 0 25px;
+        }
+    
+        &__date {
+            font-size: 11px;
+            padding: 0px 25px 0 25px;
+        }
+    
+        &__title-column {
+            font-size: 16px;
+            margin: 0;
+            padding: 17px 25px 0 25px;
+        }
+    
+        &__text {
+            font-size: 14px;
+            padding: 0px 25px 0 25px;
+        }
+
+        &__continuation {
+            margin: 17px 25px 25px 25px;
+        }
+
+        &__img img{
+            width: 100%;
+        }
+
+        &__button {
+            width: 100%;
+            margin: 27px 0 75px 0;
+        }
+    }
+
+}

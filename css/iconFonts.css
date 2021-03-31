@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'icons';
+  src:  url('../fonts/icons.eot?2ku9bg');
+  src:  url('../fonts/icons.eot?2ku9bg#iefix') format('embedded-opentype'),
+    url('../fonts/icons.ttf?2ku9bg') format('truetype'),
+    url('../fonts/icons.woff?2ku9bg') format('woff'),
+    url('../fonts/icons.svg?2ku9bg#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"], [class*=" _icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-circle:before {
+  content: "\f111";
+}
+._icon-m_arrow:before {
+  content: "\e900";
+}
+._icon-enter:before {
+  content: "\e901";
+}
+._icon-facebook:before {
+  content: "\e902";
+}
+._icon-favorites:before {
+  content: "\e903";
+}
+._icon-instagram:before {
+  content: "\e904";
+}
+._icon-l_arrow:before {
+  content: "\e905";
+}
+._icon-map:before {
+  content: "\e906";
+}
+._icon-phon:before {
+  content: "\e907";
+}
+._icon-r_arrow:before {
+  content: "\e908";
+}
+._icon-score:before {
+  content: "\e909";
+}
+._icon-search:before {
+  content: "\e90a";
+}
+._icon-vk:before {
+  content: "\e90b";
+}
